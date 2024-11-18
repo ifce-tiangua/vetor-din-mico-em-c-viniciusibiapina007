@@ -13,10 +13,15 @@ int main(){
         scanf("%d", &vetor[i]);
     }
     
+    printf("[");
     for(int i = 0; i < tam_vetor; i++){
         
-        printf("%d ", vetor[i]);
+        printf("%d", vetor[i]);
+        
+        if(i != tam_vetor-1)
+            printf(", ");
     }
+    printf("]");
     
     free(vetor);
     
