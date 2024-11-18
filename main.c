@@ -14,12 +14,19 @@ int main(){
     }
     
     printf("[");
-    for(int i = 0; i < tam_vetor; i++){
-        
-        printf("%d", vetor[i]);
-        
-        if(i != tam_vetor-1)
-            printf(", ");
+    
+    if(tam_vetor == 0){
+        printf("vazio");
+    }
+    
+    else{
+        for(int i = 0; i < tam_vetor; i++){
+            
+            printf("%d", vetor[i]);
+            
+            if(i != tam_vetor-1)
+                printf(", ");
+        }
     }
     printf("]");
     
